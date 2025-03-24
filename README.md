@@ -39,11 +39,9 @@ pip install librosa==0.8.1 torchaudio==0.9.0 matplotlib tensorboard
 ```bash
  git clone https://github.com/hpjang/Wav2Wav_VC.git
 ```
-2. Install the required libraries:
-```bash
- pip install -r requirements.txt  # Example for Python
-```
-3. Train the model:
+2. Download VCC2018 dataset:
+https://datashare.ed.ac.uk/handle/10283/3061
+4. Train the model:
 ```bash
  bash train_*.sh
 ```
