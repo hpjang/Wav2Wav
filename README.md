@@ -41,7 +41,8 @@ This repository provides the source code associated with the paper "Wav2wav: Wav
 ```
 ## 📂 Pre-Trained Weights
 Trained weights can be downloaded from the following URL:
-- [https://drive.google.com/drive/folders/1vcRphGAObQN57mcI0PME2dCztuG5Imn3?usp=sharing](Enter the URL for the trained weights here)
+- https://drive.google.com/drive/folders/1vcRphGAObQN57mcI0PME2dCztuG5Imn3?usp=sharing
+(Enter the URL for the trained weights here)
 
 ## 📜 License
 This project is licensed under the [License Name (MIT or Apache License 2.0)]. For more details, see the [LICENSE](./LICENSE) file.
