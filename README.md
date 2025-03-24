@@ -20,7 +20,7 @@ This repository provides the source code associated with the paper "Wav2wav: Wav
   - Example: `conv.sh cp_hifigan_FM gen_wavs_FM 1spkr_SF3 1spkr_TM1`
 - `train_mod_loss.py`: A modified version of training where Fourier transform is replaced by the use of prenet across all relevant parts.
 - `train_mod_loss2.py`: A further modification where only the first convolutional layer of the prenet is used (log-magnitude spectrogram format) for id_loss and cycle_loss training.
-- Final hyperparameter setting: **45_35_0.5**
+- Final hyperparameter setting: **45_30_0.5**
 
 ## 🐳 Docker Setup
 To run this project in a Docker container with GPU support:
