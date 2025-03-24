@@ -15,7 +15,7 @@ This repository provides the source code associated with the paper "Wav2wav: Wav
 - `cp_*` directories: Contain trained weights and TensorBoard logs generated during training.
 - `gen_wavs*` directories: Store generated audio samples using trained weights.
 - `train_*.sh`: Shell scripts used to train `train.py` and its variants. Various hyperparameters are defined within these scripts or in `config_v1.json`.
-- `conv.sh`: A script used to generate audio samples from trained weights.
+- `conv.sh`: A script used to generate audio samples from trained weights.(using cp* directories)
   - Usage: `conv.sh <checkpoint_directory> <output_directory> <source_speaker_directory> <target_speaker_directory>`  
   - Example: `conv.sh cp_hifigan_FM gen_wavs_FM 1spkr_SF3 1spkr_TM1`
 - `train_mod_loss.py`: A modified version of training where Fourier transform is replaced by the use of prenet across all relevant parts.
