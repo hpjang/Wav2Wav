@@ -39,13 +39,13 @@ pip install librosa==0.8.1 torchaudio==0.9.0 matplotlib tensorboard
 ```bash
  git clone [GitHub Repository URL]
 ```
-2. Train the model:
+2. Install the required libraries:
+```bash
+ pip install -r requirements.txt  # Example for Python
+```
+3. Train the model:
 ```bash
  bash train_*.sh
-```
-3. Generate audio samples:
-```bash
- bash conv.sh <checkpoint_directory> <output_directory> <source_speaker_directory> <target_speaker_directory>
 ```
 
 ### ✅ Generate Audio Samples (Wav2wav, Spec2wav)
