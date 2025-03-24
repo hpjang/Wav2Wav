@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/opt/conda/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/shared_dir/HiFi-GAN_VCC2018/wav2wav/train.py", line 543, in <module>
+    main()
+  File "/shared_dir/HiFi-GAN_VCC2018/wav2wav/train.py", line 526, in main
+    build_env(a.config, 'config.json', a.checkpoint_path)
+  File "/shared_dir/HiFi-GAN_VCC2018/wav2wav/env.py", line 15, in build_env
+    shutil.copyfile(config, os.path.join(path, config_name))
+  File "/opt/conda/lib/python3.7/shutil.py", line 121, in copyfile
+    with open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: 'cp_hifigan_MM_45_30_0.5_0109/config.json'
+Initializing Training Process..
