@@ -22,27 +22,56 @@ This repository provides the source code associated with the paper "Wav2wav: Wav
 - `train_mod_loss2.py`: A further modification where only the first convolutional layer of the prenet is used (log-magnitude spectrogram format) for id_loss and cycle_loss training.
 - Final hyperparameter setting: **45_35_0.5**
 
+## 🐳 Docker Setup
+To run this project in a Docker container with GPU support:
+```bash
+docker run --gpus device=0 -it --memory=16G --memory-swap=32G --shm-size=8G --rm -v /nfs/speechst1/storage/ckdgus0505/docker_result/:/shared_dir/  pytorch/pytorch:1.9.0-cuda10.2-cudnn7-runtime
+```
+
+### 🔍 Install Required Packages
+```bash
+apt-get update && apt-get install libsndfile1-dev
+pip install librosa==0.8.1 torchaudio==0.9.0 matplotlib tensorboard
+``
+
 ## 🔍 Usage
 1. Clone this repository:
 ```bash
  git clone [GitHub Repository URL]
 ```
-2. Install the required libraries:
-```bash
- pip install -r requirements.txt  # Example for Python
-```
-3. Train the model:
+2. Train the model:
 ```bash
  bash train_*.sh
 ```
-4. Generate audio samples:
+3. Generate audio samples:
 ```bash
  bash conv.sh <checkpoint_directory> <output_directory> <source_speaker_directory> <target_speaker_directory>
 ```
+
+### ✅ Generate Audio Samples (Wav2wav, Spec2wav)
+```bash
+./conv.sh "<checkpoint_directory>" "<output_directory>" "<source_speaker_directory>" "<target_speaker_directory>"
+```
+Example:
+```bash
+./conv.sh cp_hifigan_FM_45_30_0.5 generated 1spkr_SF3 1spkr_TM1
+```
+
+### ✅ Generate Audio Samples (Wav2spec, Spec2spec)
+```bash
+./conv??.sh "<checkpoint_directory>" "<output_directory>" "<source_speaker_directory>" "<target_speaker_directory>" "<vocoder_type>"
+```
+Example:
+```bash
+./convFM.sh cp_hifigan_FM_45_30_0.5 generated 1spkr_SF3 1spkr_TM1 mel
+```
+
 ## 📂 Pre-Trained Weights
 Trained weights can be downloaded from the following URL:
 - https://drive.google.com/drive/folders/1vcRphGAObQN57mcI0PME2dCztuG5Imn3?usp=sharing
 (Enter the URL for the trained weights here)
+
+
 
 ## 📜 License
 This project is licensed under the [License Name (MIT or Apache License 2.0)]. For more details, see the [LICENSE](./LICENSE) file.
