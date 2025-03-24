@@ -32,12 +32,12 @@ docker run --gpus device=0 -it --memory=16G --memory-swap=32G --shm-size=8G --rm
 ```bash
 apt-get update && apt-get install libsndfile1-dev
 pip install librosa==0.8.1 torchaudio==0.9.0 matplotlib tensorboard
-``
+```
 
 ## 🔍 Usage
 1. Clone this repository:
 ```bash
- git clone [GitHub Repository URL]
+ git clone https://github.com/hpjang/Wav2Wav_VC.git
 ```
 2. Install the required libraries:
 ```bash
