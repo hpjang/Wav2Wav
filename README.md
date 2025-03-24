@@ -67,7 +67,7 @@ Example:
 ## 📂 Pre-Trained Weights
 Trained weights can be downloaded from the following URL:
 - https://drive.google.com/drive/folders/1vcRphGAObQN57mcI0PME2dCztuG5Imn3?usp=sharing
-(Enter the URL for the trained weights here)
+(Enter the URL for the trained weights here doawnload it and move to cp_* directroy)
 
 
 
