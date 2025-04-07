@@ -10,7 +10,7 @@
 ## 📌 Introduction
 This repository provides the source code associated with the paper "Wav2wav: Wave-to-Wave Voice Conversion." The purpose of this project is to implement a novel voice conversion architecture that integrates the feature extractor, feature converter, and vocoder into a single module trained in an end-to-end manner.
 
-## 📁 Directory Structure and Usage
+## 📁 Directory Structure
 - `train.py`, `models.py`: The core files of the project. These files have been most frequently modified for training and evaluation purposes.
 - `cp_*` directories: Contain trained weights and TensorBoard logs generated during training.
 - `gen_wavs*` directories: Store generated audio samples using trained weights.
