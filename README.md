@@ -25,7 +25,7 @@ This repository provides the source code associated with the paper "Wav2wav: Wav
 ## 🐳 Docker Setup
 To run this project in a Docker container with GPU support:
 ```bash
-docker run --gpus device=0 -it --memory=16G --memory-swap=32G --shm-size=8G --rm -v /nfs/speechst1/storage/ckdgus0505/docker_result/:/shared_dir/  pytorch/pytorch:1.9.0-cuda10.2-cudnn7-runtime
+docker run --gpus device=0 -it --memory=16G --memory-swap=32G --shm-size=8G --rm -v /your storage path/:/shared_dir/  /your docker images pytorch/pytorch:1.9.0-cuda10.2-cudnn7-runtime
 ```
 
 ### 🔍 Install Required Packages
