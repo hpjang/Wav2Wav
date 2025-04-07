@@ -37,7 +37,7 @@ pip install librosa==0.8.1 torchaudio==0.9.0 matplotlib tensorboard
 ## 🔍 Usage
 1. Clone this repository:
 ```bash
- git clone https://github.com/hpjang/Wav2Wav_VC.git
+ git clone https://github.com/hpjang/Wav2Wav.git
 ```
 2. Download VCC2018 dataset:
 https://datashare.ed.ac.uk/handle/10283/3061
